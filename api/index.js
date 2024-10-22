@@ -3,9 +3,9 @@ const fs = require("fs");
 const path = require("path");
 
 const app = express();
-const battlesDir = path.join(__dirname, "battles");
+const battlesDir = path.join(__dirname, "../battles"); // Adjust path to point to battles directory
 
-app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, "../"))); // Serve static files from the root
 
 // Route to fetch the list of battle files
 app.get("/battles-list", (req, res) => {
@@ -27,10 +27,7 @@ app.get("/battles-list", (req, res) => {
 
 // Serve the index.html page
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "index.html"));
+  res.sendFile(path.join(__dirname, "../index.html")); // Adjust path to point to index.html
 });
 
-const PORT = 3000;
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
+module.exports = app; // Export the app
