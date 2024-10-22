@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Battle - 2024-10-21</title>
+    <style>
+      body {
+        background-color: #434b92;
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      h1 {
+        margin: 20px 0;
+        color: white;
+      }
+      .container {
+        height: 300px;
+        width: 400px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .rec1 {
+        background-color: #f3ac3c;
+        width: 190px;
+        height: 300px;
+        position: absolute;
+      }
+      .rec2 {
+        background-color: #f3ac3c;
+        width: 230px;
+        height: 50px;
+        position: absolute;
+      }
+      .top {
+        top: 25px;
+      }
+      .bottom {
+        bottom: 25px;
+      }
+      .return-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding: 10px 20px;
+        background-color: #f3ac3c;
+        color: #434b92;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+      .return-button:hover {
+        background-color: #fff;
+        transform: translateX(-3px);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Battle - 2024-10-21</h1>
+    <div class="container">
+      <div class="rec1"></div>
+      <div class="rec2 top"></div>
+      <div class="rec2"></div>
+      <div class="rec2 bottom"></div>
+    </div>
+  </body>
+</html>
