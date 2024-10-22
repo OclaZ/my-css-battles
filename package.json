@@ -1,15 +1,12 @@
 {
-  "name": "css-battle",
+  "name": "css-battles",
   "version": "1.0.0",
-  "main": "api/index.js",
+  "description": "OCLAZ's CSS Battles",
+  "main": "server.js",
   "scripts": {
-    "start": "node api/index.js"
+    "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
-    "express": "^4.21.1"
+    "express": "^4.17.1"
   }
 }
