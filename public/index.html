@@ -271,6 +271,37 @@
         button:hover:not(:disabled) {
           transform: none;
         }
+        footer {
+          background-color: #12052b; /* Background color */
+          color: white; /* Text color */
+          text-align: center; /* Center align text */
+          padding: 20px 0; /* Padding for top and bottom */
+          position: relative; /* Position for proper layout */
+          bottom: 0; /* Stick to the bottom if you want */
+          width: 100%; /* Full width */
+        }
+
+        .footer-content p {
+          margin: 5px 0; /* Margin for paragraph elements */
+        }
+
+        .github-link {
+          color: #ffcc00; /* Change link color */
+          text-decoration: none; /* Remove underline */
+          display: flex; /* Use flex for alignment */
+          align-items: center; /* Center align items vertically */
+          justify-content: center; /* Center align items horizontally */
+          margin-top: 10px; /* Space above the GitHub link */
+        }
+
+        .github-link svg {
+          margin-right: 5px; /* Space between icon and text */
+          fill: #ffcc00; /* Icon color */
+        }
+
+        .github-link:hover {
+          text-decoration: underline; /* Underline on hover */
+        }
       }
     </style>
   </head>
@@ -370,7 +401,32 @@
           </svg>
         </button>
       </div>
+      <footer>
+        <div class="footer-content">
+          <p>© 2024 Oclaz</p>
+          <a
+            href="https://github.com/Oclaz"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="github-link"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.54 5.47 7.59.4.07.55-.17.55-.39 0-.19-.01-.85-.01-1.54-2.24.49-2.71-1.08-2.71-1.08-.36-.92-.87-1.16-.87-1.16-.71-.49.05-.48.05-.48.79.06 1.21.81 1.21.81.7 1.2 1.84.85 2.29.65.07-.51.27-.85.49-1.05-1.75-.2-3.58-.87-3.58-3.85 0-.85.3-1.55.78-2.1-.08-.2-.34-1.02.07-2.12 0 0 .66-.21 2.16.81A7.57 7.57 0 018 3.13c.66.003 1.33.09 1.96.26 1.5-1.02 2.16-.81 2.16-.81.41 1.1.15 1.92.07 2.12.48.55.78 1.25.78 2.1 0 2.99-1.84 3.65-3.58 3.85.28.24.53.73.53 1.47 0 1.06-.01 1.92-.01 2.19 0 .22.15.47.55.39C13.71 14.54 16 11.54 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+            GitHub Profile
+          </a>
+        </div>
+      </footer>
     </div>
+
     <script>
       const battleList = document.getElementById("battles-list");
       const prevBtn = document.getElementById("prev-btn");
