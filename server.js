@@ -16,7 +16,7 @@ app.get("/api/battles", async (req, res) => {
       .filter((file) => file.endsWith(".html"))
       .map((file) => ({
         date: file.replace(".html", ""),
-        path: `/battles/${file}`,
+        path: `battles/${file}`,
       }));
     res.json(battleFiles);
   } catch (error) {
@@ -27,7 +27,7 @@ app.get("/api/battles", async (req, res) => {
 
 // Serve index.html for all other routes
 app.get("*", (req, res) => {
-  res.sendFile(path.join(process.cwd(), "index.html"));
+  res.sendFile(path.join(process.cwd(), "/public/index.html"));
 });
 
 const PORT = process.env.PORT || 3000;

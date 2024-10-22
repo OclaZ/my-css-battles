@@ -8,7 +8,8 @@
       content="Join OCLAZ's CSS Battles and enhance your CSS skills with exciting challenges!"
     />
     <title>OCLAZ's CSS Battles</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
@@ -23,6 +24,8 @@
         --accent-color: #10b981;
         --table-bg: #1f2937;
         --table-hover: #374151;
+        --error-color: #ef4444;
+        --loading-color: #6b7280;
       }
 
       * {
@@ -58,7 +61,7 @@
       }
 
       h1 {
-        font-size: 3.5rem;
+        font-size: clamp(2rem, 5vw, 3.5rem);
         font-weight: 700;
         display: flex;
         align-items: center;
@@ -70,13 +73,14 @@
           var(--secondary-color)
         );
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
         text-transform: inherit;
         letter-spacing: 2px;
       }
 
       .logo {
-        height: 3rem;
+        height: clamp(2rem, 4vw, 3rem);
         width: auto;
         color: var(--tertiary-color);
         animation: pulse 2s infinite;
@@ -94,11 +98,6 @@
         }
       }
 
-      .year {
-        font-weight: 600;
-        color: var(--tertiary-color);
-      }
-
       .table-container {
         background-color: var(--table-bg);
         border-radius: 10px;
@@ -111,6 +110,17 @@
         width: 100%;
         border-collapse: separate;
         border-spacing: 0;
+      }
+
+      caption {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
       }
 
       th,
@@ -129,23 +139,61 @@
       }
 
       tr {
-        transition: all 0.3s ease;
+        transition: background-color 0.2s ease;
       }
 
       tr:hover {
         background-color: var(--table-hover);
       }
 
+      .error-message {
+        color: var(--error-color);
+        text-align: center;
+        padding: 1rem;
+      }
+
+      .loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        color: var(--loading-color);
+      }
+
+      .loading::after {
+        content: "";
+        width: 2rem;
+        height: 2rem;
+        border: 2px solid;
+        border-radius: 50%;
+        border-right-color: transparent;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
       a {
         color: var(--accent-color);
         text-decoration: none;
-        transition: color 0.3s ease;
+        transition: color 0.2s ease;
         display: inline-flex;
         align-items: center;
+        gap: 0.5rem;
+        position: relative;
       }
 
       a:hover {
         color: var(--primary-color);
+      }
+
+      a:focus {
+        outline: 2px solid var(--primary-color);
+        outline-offset: 2px;
+        border-radius: 4px;
       }
 
       .pagination {
@@ -160,110 +208,36 @@
         border: none;
         padding: 0.75rem 1.5rem;
         cursor: pointer;
-        transition: all 0.3s ease;
+        transition: all 0.2s ease;
         border-radius: 8px;
         font-weight: 600;
         font-size: 1rem;
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 0.5rem;
       }
 
-      button:hover {
+      button:hover:not(:disabled) {
         background-color: var(--secondary-color);
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
       }
 
-      /* CSS-based icons */
-      .icon-calendar,
-      .icon-external-link,
-      .icon-chevron-left,
-      .icon-chevron-right {
-        display: inline-block;
-        width: 1.2em;
-        height: 1.2em;
-        margin-right: 0.5em;
-        position: relative;
+      button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
       }
 
-      .icon-calendar::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: 2px solid currentColor;
-        border-radius: 4px;
+      button:focus {
+        outline: 2px solid var(--primary-color);
+        outline-offset: 2px;
       }
 
-      .icon-calendar::after {
-        content: "";
-        position: absolute;
-        top: 25%;
-        left: 20%;
-        width: 60%;
-        height: 2px;
-        background-color: currentColor;
-      }
-
-      .icon-external-link::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 70%;
-        height: 70%;
-        border: 2px solid currentColor;
-        border-left: none;
-        border-bottom: none;
-      }
-
-      .icon-external-link::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 70%;
-        height: 70%;
-        border-top: 2px solid currentColor;
-        border-right: 2px solid currentColor;
-      }
-
-      .icon-chevron-left::before,
-      .icon-chevron-right::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 0.6em;
-        height: 0.6em;
-        border-top: 3px solid currentColor;
-        border-right: 3px solid currentColor;
-      }
-
-      .icon-chevron-left::before {
-        transform: translate(-25%, -50%) rotate(-135deg);
-      }
-
-      .icon-chevron-right::before {
-        transform: translate(-75%, -50%) rotate(45deg);
-      }
-
-      /* Responsive design */
       @media (max-width: 768px) {
         .container {
           width: 95%;
           padding: 1.5rem;
-        }
-
-        h1 {
-          font-size: 2.5rem;
-        }
-
-        .logo {
-          height: 2.5rem;
         }
 
         th,
@@ -273,21 +247,29 @@
       }
 
       @media (max-width: 480px) {
-        h1 {
-          font-size: 2rem;
-        }
-
-        .logo {
-          height: 2rem;
-        }
-
         th,
         td {
           padding: 0.75rem;
         }
 
-        .icon-calendar {
-          display: none;
+        .pagination {
+          flex-direction: column;
+          align-items: stretch;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .logo {
+          animation: none;
+        }
+
+        button,
+        tr {
+          transition: none;
+        }
+
+        button:hover:not(:disabled) {
+          transform: none;
         }
       }
     </style>
