@@ -43,6 +43,25 @@
         height: 170px;
         border-radius: 40px;
       }
+      .code-display {
+        width: 90%;
+        max-width: 800px;
+        margin: 20px 0;
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        padding: 20px;
+        overflow-x: auto;
+      }
+      pre {
+        margin: 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+      code {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 14px;
+        line-height: 1.5;
+      }
     </style>
   </head>
   <body>
@@ -51,6 +70,48 @@
       <div class="shape cercle"></div>
       <div class="shape rec"></div>
       <div class="shape white-rec"></div>
+    </div>
+    <h2>Code</h2>
+    <div class="code-display">
+      <pre><code>
+    &lt;style&gt;
+      body {
+        background: #f0f0f0;
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .shape {
+        background: #e05947;
+        position: absolute;
+      }
+      .cercle {
+        width: 200px;
+        height: 80px;
+        border-radius: 70%;
+      }
+      .rec {
+        width: 70px;
+        height: 200px;
+        border-radius: 40px;
+      }
+      .white-rec {
+        background: #f0f0f0;
+        width: 40px;
+        height: 170px;
+        border-radius: 40px;
+      }
+    &lt;/style&gt;
+  &lt;body&gt;
+      &lt;div class="shape cercle"&gt;&lt;/div&gt;
+      &lt;div class="shape rec "&gt;&lt;/div&gt;
+      &lt;div class="shape white-rec "&gt;&lt;/div&gt;
+      
+  &lt;/body&gt;
+&lt;/html&gt;
+      </code></pre>
     </div>
   </body>
 </html>

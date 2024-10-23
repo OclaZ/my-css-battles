@@ -9,8 +9,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        font-family: Arial, sans-serif;
       }
-      h1 {
+      h1,
+      h2 {
         margin: 20px 0;
       }
       .container {
@@ -72,6 +74,25 @@
         left: 156px;
         transform: rotate(180deg);
       }
+      .code-display {
+        width: 90%;
+        max-width: 800px;
+        margin: 20px 0;
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        padding: 20px;
+        overflow-x: auto;
+      }
+      pre {
+        margin: 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+      code {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 14px;
+        line-height: 1.5;
+      }
     </style>
   </head>
   <body>
@@ -85,6 +106,79 @@
       <div class="circle left"></div>
       <div class="circle right"></div>
       <div class="circle bottom"></div>
+    </div>
+    <h2>Code</h2>
+    <div class="code-display">
+      <pre><code>
+    &lt;style&gt;
+      body{
+    background:#328FC1;
+    margin:0;
+    display:flex;
+    position:relative;
+  }
+    .square {
+  background: #243D83;
+  height: 90px;
+  width: 90px;
+  position: absolute;
+}
+.top {
+  top: 15px;
+  left: 156px;
+}
+.left {
+  top: 105px;
+  left: 66px;
+}
+.right {
+  top: 105px;
+  right: 66px;
+}
+.bottom {
+  bottom: 15px;
+  left: 156px;
+}
+.circle {
+  background: #EEB850;
+  height: 45px;
+  width: 90px;
+  position: absolute;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+.circle.top {
+  top: 60px;
+  left: 156px;
+}
+.circle.left {
+  left: 222px;
+  top: 127px;
+  transform: rotate(90deg);
+}
+.circle.right {
+  right: 222px;
+  top: 127px;
+  transform: rotate(-90deg);
+}
+.circle.bottom {
+  bottom: 60px;
+  left: 156px;
+  transform: rotate(180deg);
+}
+    &lt;/style&gt;
+  &lt;body&gt;
+      &lt;div class="square top"&gt;&lt;/div&gt;
+      &lt;div class="square left"&gt;&lt;/div&gt;
+      &lt;div class="square right"&gt;&lt;/div&gt;
+      &lt;div class="square bottom"&gt;&lt;/div&gt;
+      &lt;div class="circle top"&gt;&lt;/div&gt;
+      &lt;div class="circle left"&gt;&lt;/div&gt;
+      &lt;div class="circle right"&gt;&lt;/div&gt;
+      &lt;div class="circle bottom"&gt;&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+      </code></pre>
     </div>
   </body>
 </html>
