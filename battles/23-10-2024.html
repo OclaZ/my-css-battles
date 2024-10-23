@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Battle - 2024-10-23</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      h1 {
+        margin: 20px 0;
+      }
+      .container {
+        background: #328fc1;
+        height: 300px;
+        width: 400px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 10px solid #243d83;
+      }
+      .square {
+        background: #243d83;
+        height: 90px;
+        width: 90px;
+        position: absolute;
+      }
+      .top {
+        top: 15px;
+        left: 156px;
+      }
+      .left {
+        top: 105px;
+        left: 66px;
+      }
+      .right {
+        top: 105px;
+        right: 66px;
+      }
+      .bottom {
+        bottom: 15px;
+        left: 156px;
+      }
+      .circle {
+        background: #eeb850;
+        height: 45px;
+        width: 90px;
+        position: absolute;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+      }
+      .circle.top {
+        top: 60px;
+        left: 156px;
+      }
+      .circle.left {
+        left: 222px;
+        top: 127px;
+        transform: rotate(90deg);
+      }
+      .circle.right {
+        right: 222px;
+        top: 127px;
+        transform: rotate(-90deg);
+      }
+      .circle.bottom {
+        bottom: 60px;
+        left: 156px;
+        transform: rotate(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Battle - 2024-10-23</h1>
+    <div class="container">
+      <div class="square top"></div>
+      <div class="square left"></div>
+      <div class="square right"></div>
+      <div class="square bottom"></div>
+      <div class="circle top"></div>
+      <div class="circle left"></div>
+      <div class="circle right"></div>
+      <div class="circle bottom"></div>
+    </div>
+  </body>
+</html>
