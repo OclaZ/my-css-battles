@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Battle - 2024-10-27</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+      h1,
+      h2 {
+        margin: 20px 0;
+      }
+      .container {
+        background-color: #191210;
+        color: #eca03d;
+        height: 300px;
+        width: 400px;
+        border: 10px solid #f4f4f4;
+        position: relative;
+        overflow: hidden;
+      }
+      .circle {
+        width: 80px;
+        height: 80px;
+        background: #eca03d;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+      }
+      .circle::before {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #eca03d;
+        box-shadow: 69px 0 #eca03d, -69px 0 #eca03d, 0 80px #eca03d,
+          0 -80px #eca03d, 69px 80px #eca03d, 69px -80px #eca03d,
+          -69px -80px #eca03d, -69px 80px #eca03d;
+      }
+      .code-display {
+        width: 90%;
+        max-width: 800px;
+        margin: 20px 0;
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        padding: 20px;
+        overflow-x: auto;
+      }
+      pre {
+        margin: 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+      code {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Battle - 2024-10-27</h1>
+    <div class="container">
+      <div class="circle"></div>
+    </div>
+    <h2>Code</h2>
+    <div class="code-display">
+      <pre><code>
+&lt;style&gt;
+  body {
+    background: #191210;
+    margin: 0;
+  }
+  .circle {
+    width: 80px;
+    height: 80px;
+    background: #ECA03D;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+  .circle::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ECA03D;
+    box-shadow: 
+      69px 0 #ECA03D,
+      -69px 0 #ECA03D,
+      0 80px #ECA03D,
+      0 -80px #ECA03D,
+      69px 80px #ECA03D,
+      69px -80px #ECA03D,
+      -69px -80px #ECA03D,
+      -69px 80px #ECA03D;
+  }
+&lt;/style&gt;
+
+&lt;div class="circle"&gt;&lt;/div&gt;
+      </code></pre>
+    </div>
+  </body>
+</html>
