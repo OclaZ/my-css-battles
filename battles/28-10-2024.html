@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Battle - 2024-10-28</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+      h1,
+      h2 {
+        margin: 20px 0;
+      }
+      .container {
+        background: #4a9a86;
+        height: 300px;
+        width: 400px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 10px solid #000;
+      }
+      .wcircle,
+      .gcircle {
+        width: 160px;
+        height: 80px;
+        position: absolute;
+        border-top-left-radius: 160px;
+        border-top-right-radius: 160px;
+      }
+
+      .wcircle {
+        background: #f0f0f0;
+        left: 120px;
+      }
+
+      .gcircle {
+        width: 120px;
+        height: 60px;
+        background: #4a9a86;
+        left: 140px;
+      }
+
+      .t {
+        top: 50px;
+      }
+      .b {
+        bottom: 110px;
+      }
+      .gt {
+        top: 70px;
+      }
+      .gb {
+        bottom: 110px;
+      }
+      .code-display {
+        width: 90%;
+        max-width: 800px;
+        margin: 20px 0;
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        padding: 20px;
+        overflow-x: auto;
+      }
+      pre {
+        margin: 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+      code {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Battle - 2024-10-25</h1>
+    <div class="container">
+      <div class="wcircle t"></div>
+      <div class="gcircle gt"></div>
+      <div class="wcircle b"></div>
+      <div class="gcircle gb"></div>
+    </div>
+    <h2>Code</h2>
+    <div class="code-display">
+      <pre><code>
+    &lt;style&gt;
+    body {
+    background: #4A9A86;
+    margin: 0;
+    position: relative;
+  }
+
+  .wcircle, .gcircle {
+    width: 160px;
+    height: 80px;
+    position: absolute;
+    border-top-left-radius: 160px;
+    border-top-right-radius: 160px;
+  }
+
+  .wcircle {
+    background: #F0F0F0;
+    left: 120px;
+  }
+
+  .gcircle {
+    width: 120px;
+    height: 60px;
+    background: #4A9A86;
+    left: 140px;
+  }
+
+  .t { top: 50px; }
+  .b { bottom: 110px; }
+  .gt { top: 70px; }
+  .gb { bottom: 110px; }
+    &lt;/style&gt;
+  &lt;body&gt;
+      &lt;div class="wcircle t"&gt;&lt;/div&gt;
+      &lt;div class="gcircle gt"&gt;&lt;/div&gt;
+      &lt;div class="wcircle b"&gt;&lt;/div&gt;
+      &lt;div class="gcircle gb"&gt;&lt;/div&gt;
+  &lt;/body&gt;
+
+      </code></pre>
+    </div>
+  </body>
+</html>
