@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Battle - 2024-10-29</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+      h1,
+      h2 {
+        margin: 20px 0;
+      }
+      .container {
+        background: #6255aa;
+        height: 300px;
+        width: 400px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 10px solid #000;
+      }
+
+      .pinksquare,
+      .purplesquare,
+      .pinksquare.s,
+      .purplesquare.s {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+
+      .pinksquare {
+        width: 200px;
+        height: 200px;
+        background: #d96e9f;
+        border-radius: 40px;
+      }
+
+      .purplesquare {
+        width: 150px;
+        height: 150px;
+        background: #6255aa;
+      }
+
+      .pinksquare.s {
+        width: 100px;
+        height: 100px;
+        background: #d96e9f;
+        border-radius: 20px;
+        position: absolute;
+      }
+
+      .purplesquare.s {
+        width: 50px;
+        height: 50px;
+        background: #6255aa;
+        position: absolute;
+      }
+      .code-display {
+        width: 90%;
+        max-width: 800px;
+        margin: 20px 0;
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        padding: 20px;
+        overflow-x: auto;
+      }
+      pre {
+        margin: 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+      code {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Battle - 2024-10-29</h1>
+    <div class="container">
+      <div class="pinksquare">
+        <div class="purplesquare">
+          <div class="pinksquare s">
+            <div class="purplesquare s"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2>Code</h2>
+    <div class="code-display">
+      <pre><code>
+    &lt;style&gt;
+    body {
+      background: #6255AA;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .pinksquare, .purplesquare, .pinksquare.s, .purplesquare.s {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .pinksquare { width: 200px; height: 200px; background: #D96E9F; border-radius: 40px; }
+    .purplesquare { width: 150px; height: 150px; background: #6255AA; }
+    .pinksquare.s { width: 100px; height: 100px; background: #D96E9F; border-radius: 20px; position: absolute; }
+    .purplesquare.s { width: 50px; height: 50px; background: #6255AA; position: absolute; }
+    &lt;/style&gt;
+
+    &lt;body&gt;
+      &lt;div class="pinksquare"&gt;
+        &lt;div class="purplesquare"&gt;
+          &lt;div class="pinksquare s"&gt;
+            &lt;div class="purplesquare s"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/body&gt;
+      </code></pre>
+    </div>
+  </body>
+</html>
