@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Battle - 2024-10-30</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+      h1,
+      h2 {
+        margin: 20px 0;
+      }
+      .container {
+        background: #eeb850;
+        height: 300px;
+        width: 400px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 10px solid #000;
+      }
+      .rec {
+        background: #aa445f;
+        width: 320px;
+        height: 220px;
+        position: relative;
+      }
+
+      .circle {
+        background: #eeb850;
+        width: 140px;
+        height: 80px;
+        border-radius: 70px;
+        position: absolute;
+        left: 130px;
+      }
+
+      .circle.t {
+        top: 0;
+      }
+      .circle.b {
+        bottom: 0;
+      }
+      .code-display {
+        width: 90%;
+        max-width: 800px;
+        margin: 20px 0;
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        padding: 20px;
+        overflow-x: auto;
+      }
+      pre {
+        margin: 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+      code {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Battle - 2024-10-30</h1>
+    <div class="container">
+      <div class="rec"></div>
+      <div class="circle t"></div>
+      <div class="circle b"></div>
+    </div>
+    <h2>Code</h2>
+    <div class="code-display">
+      <pre><code>
+    &lt;style&gt;
+    body {
+      background: #EEB850;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .rec {
+      background: #AA445F;
+      width: 320px;
+      height: 220px;
+      position: relative;
+    }
+
+    .circle {
+      background: #EEB850;
+      width: 140px;
+      height: 80px;
+      border-radius: 70px;
+      position: absolute;
+      left: 130px;
+    }
+
+    .circle.t { top: 0; }
+    .circle.b { bottom: 0; }
+    &lt;/style&gt;
+
+    &lt;body&gt;
+      &lt;div class="rec"&gt;
+        &lt;div class="circle t"&gt;&lt;/div&gt;
+        &lt;div class="circle b"&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/body&gt;
+      </code></pre>
+    </div>
+  </body>
+</html>
