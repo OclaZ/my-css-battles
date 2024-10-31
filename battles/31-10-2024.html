@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Battle - 2024-10-31</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+      h1,
+      h2 {
+        margin: 20px 0;
+      }
+      .container {
+        background: #f3ead2;
+        height: 300px;
+        width: 400px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 10px solid #000;
+      }
+
+      .rec {
+        background: #d96c7b;
+        position: absolute;
+      }
+      .b {
+        width: 180px;
+        height: 108px;
+        bottom: 0;
+        left: 110px;
+      }
+      .t {
+        width: 108px;
+        height: 108px;
+        bottom: 108px;
+        left: 146px;
+      }
+      .s {
+        width: 36px;
+        height: 72px;
+        top: 12px;
+        left: 182px;
+      }
+
+      .wrec {
+        width: 36px;
+        height: 72px;
+        position: absolute;
+        background: #f3ead2;
+      }
+      .bl {
+        bottom: 0;
+        left: 146px;
+      }
+      .br {
+        bottom: 0;
+        left: 218px;
+      }
+      .m {
+        top: 120px;
+        left: 182px;
+      }
+      .code-display {
+        width: 90%;
+        max-width: 800px;
+        margin: 20px 0;
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        padding: 20px;
+        overflow-x: auto;
+      }
+      pre {
+        margin: 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+      code {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Battle - 2024-10-31</h1>
+    <div class="container">
+      <div class="rec b"></div>
+      <div class="rec t"></div>
+      <div class="rec s"></div>
+      <div class="wrec bl"></div>
+      <div class="wrec br"></div>
+      <div class="wrec m"></div>
+    </div>
+    <h2>Code</h2>
+    <div class="code-display">
+      <pre><code>
+    &lt;style&gt;
+    body {
+      background: #F3EAD2;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .rec {
+      background: #D96C7B;
+      position: absolute;
+    }
+    .b { width: 180px; height: 108px; bottom: 0; left: 110px; }
+    .t { width: 108px; height: 108px; bottom: 108px; left: 146px; }
+    .s { width: 36px; height: 72px; top: 12px; left: 182px; }
+
+    .wrec {
+      width: 36px;
+      height: 72px;
+      position: absolute;
+      background: #F3EAD2;
+    }
+    .bl { bottom: 0; left: 146px; }
+    .br { bottom: 0; left: 218px; }
+    .m { top: 120px; left: 182px; }
+    &lt;/style&gt;
+
+    &lt;body&gt;
+      &lt;div class="rec b"&gt;&lt;/div&gt;
+      &lt;div class="rec t"&gt;&lt;/div&gt;
+      &lt;div class="rec s"&gt;&lt;/div&gt;
+      &lt;div class="wrec bl"&gt;&lt;/div&gt;
+      &lt;div class="wrec br"&gt;&lt;/div&gt;
+      &lt;div class="wrec m"&gt;&lt;/div&gt;
+    &lt;/body&gt;
+      </code></pre>
+    </div>
+  </body>
+</html>
