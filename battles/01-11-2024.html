@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Battle - 2024-11-01</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+      h1,
+      h2 {
+        margin: 20px 0;
+      }
+      .container {
+        background: #515697;
+        height: 300px;
+        width: 400px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 10px solid #000;
+      }
+      .rec,
+      .circle {
+        width: 360px;
+        background: #e38f66;
+        position: absolute;
+        left: 20px;
+      }
+      .rec {
+        height: 120px;
+        bottom: 0;
+      }
+      .circle {
+        height: 180px;
+        top: 12px;
+        border-top-left-radius: 180px;
+        border-top-right-radius: 180px;
+      }
+      .rectangle {
+        position: absolute;
+        bottom: 0;
+        width: 36px;
+        height: 72px;
+        background: #515697;
+      }
+      .code-display {
+        width: 90%;
+        max-width: 800px;
+        margin: 20px 0;
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        padding: 20px;
+        overflow-x: auto;
+      }
+      pre {
+        margin: 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+      code {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Battle - 2024-10-01</h1>
+    <div class="container">
+      <div class="rec"></div>
+      <div class="circle"></div>
+      <div class="rectangle" style="left: 56px"></div>
+      <div class="rectangle" style="left: 128px"></div>
+      <div class="rectangle" style="right: 56px"></div>
+      <div class="rectangle" style="right: 128px"></div>
+    </div>
+    <h2>Code</h2>
+    <div class="code-display">
+      <pre><code>
+    &lt;style&gt;
+    body {
+      background: #515697;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      position: relative;
+    }
+
+    .rec, .circle {
+      width: 360px;
+      background: #E38F66;
+      position: absolute;
+      left: 20px;
+    }
+    .rec {
+      height: 120px;
+      bottom: 0;
+    }
+    .circle {
+      height: 180px;
+      top: 12px;
+      border-top-left-radius: 180px;
+      border-top-right-radius: 180px;
+    }
+    .rectangle {
+      position: absolute;
+      bottom: 0;
+      width: 36px;
+      height: 72px;
+      background: #515697;
+    }
+    &lt;/style&gt;
+
+    &lt;body&gt;
+      &lt;div class="rec"&gt;&lt;/div&gt;
+      &lt;div class="circle"&gt;&lt;/div&gt;
+      &lt;div class="rectangle" style="left: 56px;"&gt;&lt;/div&gt;
+      &lt;div class="rectangle" style="left: 128px;"&gt;&lt;/div&gt;
+      &lt;div class="rectangle" style="right: 56px;"&gt;&lt;/div&gt;
+      &lt;div class="rectangle" style="right: 128px;"&gt;&lt;/div&gt;
+    &lt;/body&gt;
+      </code></pre>
+    </div>
+  </body>
+</html>
