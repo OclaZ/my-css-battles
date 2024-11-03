@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Battle - 2024-11-03</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+      h1,
+      h2 {
+        margin: 20px 0;
+      }
+      .container {
+        background: #2d3464;
+        height: 300px;
+        width: 400px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 10px solid #000;
+      }
+      .square {
+        width: 120px;
+        height: 120px;
+        background: #c0d6e7;
+        position: absolute;
+        top: 90px;
+        left: 140px;
+      }
+      .circle {
+        width: 80px;
+        height: 80px;
+        background: #c0d6e7;
+        position: absolute;
+        border-radius: 50%;
+        top: 110px;
+      }
+      .circle.l {
+        left: 120px;
+      }
+      .circle.r {
+        right: 120px;
+      }
+      .rec {
+        width: 16px;
+        height: 60px;
+        background: #d95362;
+        position: absolute;
+        bottom: 30px;
+      }
+      .rec:nth-child(n + 4) {
+        left: calc(192px + (26px * (var(--i) - 3)));
+      }
+      .code-display {
+        width: 90%;
+        max-width: 800px;
+        margin: 20px 0;
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        padding: 20px;
+        overflow-x: auto;
+      }
+      pre {
+        margin: 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+      code {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Battle - 2024-11-03</h1>
+    <div class="container">
+      <div class="square"></div>
+      <div class="circle l"></div>
+      <div class="circle r"></div>
+      <div class="rec" style="--i: 1"></div>
+      <div class="rec" style="--i: 2"></div>
+      <div class="rec" style="--i: 3"></div>
+      <div class="rec" style="--i: 4"></div>
+      <div class="rec" style="--i: 5"></div>
+    </div>
+    <h2>Code</h2>
+    <div class="code-display">
+      <pre><code>
+    &lt;style&gt;
+      body {
+        background: #2D3464;
+        margin: 0; 
+      }
+      .square {
+        width: 120px;
+        height: 120px;
+        background: #C0D6E7;
+        position: absolute;
+        top: 90px;
+        left: 140px;
+      }
+      .circle {
+        width: 80px;
+        height: 80px;
+        background: #C0D6E7;
+        position: absolute;
+        border-radius: 50%;
+        top: 110px;
+      }
+      .circle.l { left: 120px; }
+      .circle.r { right: 120px; }
+      .rec {
+        width: 16px;
+        height: 60px;
+        background: #D95362;
+        position: absolute;
+        bottom: 30px;
+      }
+      .rec:nth-child(n+4) { left: calc(192px + (26px * (var(--i) - 3))); }
+    &lt;/style&gt;
+
+    &lt;body&gt;
+      &lt;div class='square'&gt;&lt;/div&gt;
+      &lt;div class='circle l'&gt;&lt;/div&gt;
+      &lt;div class='circle r'&gt;&lt;/div&gt;
+      &lt;div class='rec' style="--i: 1;"&gt;&lt;/div&gt;
+      &lt;div class='rec' style="--i: 2;"&gt;&lt;/div&gt;
+      &lt;div class='rec' style="--i: 3;"&gt;&lt;/div&gt;
+      &lt;div class='rec' style="--i: 4;"&gt;&lt;/div&gt;
+      &lt;div class='rec' style="--i: 5;"&gt;&lt;/div&gt;
+    &lt;/body&gt;
+      </code></pre>
+    </div>
+  </body>
+</html>
