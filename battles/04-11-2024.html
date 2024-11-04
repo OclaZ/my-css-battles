@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Battle - 2024-11-04</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+      h1,
+      h2 {
+        margin: 20px 0;
+      }
+      .container {
+        background: #2f5a76;
+        height: 300px;
+        width: 400px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 10px solid #000;
+      }
+      .rec,
+      .square {
+        background: #f5bb60;
+        position: absolute;
+      }
+      .rec {
+        width: 40px;
+        height: 80px;
+      }
+      .square {
+        width: 40px;
+        height: 40px;
+      }
+      .code-display {
+        width: 90%;
+        max-width: 800px;
+        margin: 20px 0;
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        padding: 20px;
+        overflow-x: auto;
+      }
+      pre {
+        margin: 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+      code {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Battle - 2024-11-04</h1>
+    <div class="container">
+      <div class="rec" style="left: 40px; bottom: 40px"></div>
+      <div class="rec" style="left: 120px; top: 60px"></div>
+      <div class="rec" style="right: 40px; bottom: 40px"></div>
+      <div class="rec" style="right: 120px; top: 60px"></div>
+      <div
+        class="rec"
+        style="right: 180px; top: 0; transform: rotate(90deg)"
+      ></div>
+      <div class="square" style="bottom: 0; left: 0"></div>
+      <div class="square" style="bottom: 0; right: 0"></div>
+      <div class="square" style="bottom: 120px; left: 80px"></div>
+      <div class="square" style="bottom: 120px; right: 80px"></div>
+    </div>
+    <h2>Code</h2>
+    <div class="code-display">
+      <pre><code>
+    &lt;style&gt;
+      body { 
+        background: #2F5A76; 
+        margin: 0; 
+      }
+      .rec, .square {
+        background: #F5BB60;
+        position: absolute;
+      }
+      .rec { width: 40px; height: 80px; }
+      .square { width: 40px; height: 40px; }
+    &lt;/style&gt;
+
+    &lt;div class='rec' style="left: 40px; bottom: 40px;"&gt;&lt;/div&gt;
+    &lt;div class='rec' style="left: 120px; top: 60px;"&gt;&lt;/div&gt;
+    &lt;div class='rec' style="right: 40px; bottom: 40px;"&gt;&lt;/div&gt;
+    &lt;div class='rec' style="right: 120px; top: 60px;"&gt;&lt;/div&gt;
+    &lt;div class='rec' style="right: 180px; top: 0; transform: rotate(90deg);"&gt;&lt;/div&gt;
+    &lt;div class='square' style="bottom: 0;"&gt;&lt;/div&gt;
+    &lt;div class='square' style="bottom: 0; right: 0;"&gt;&lt;/div&gt;
+    &lt;div class='square' style="bottom: 120px; left: 80px;"&gt;&lt;/div&gt;
+    &lt;div class='square' style="bottom: 120px; right: 80px;"&gt;&lt;/div&gt;
+      </code></pre>
+    </div>
+  </body>
+</html>
