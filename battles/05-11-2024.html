@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Battle - 2024-11-04</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+      h1,
+      h2 {
+        margin: 20px 0;
+      }
+      .container {
+        background: #61a74e;
+        height: 300px;
+        width: 400px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 10px solid #000;
+      }
+      .circle,
+      .shape {
+        background: #fade8b;
+        position: absolute;
+        border-radius: 1in;
+      }
+      .circle {
+        height: 100px;
+        width: 140px;
+        top: 80px;
+        left: 130px;
+      }
+      .shape {
+        height: 59px;
+        width: 60px;
+        border-radius: 0 0 36px 2in;
+      }
+      .l {
+        top: 160px;
+        left: 140px;
+      }
+      .r {
+        top: 160px;
+        right: 140px;
+        transform: scaleX(-1);
+      }
+      .code-display {
+        width: 90%;
+        max-width: 800px;
+        margin: 20px 0;
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        padding: 20px;
+        overflow-x: auto;
+      }
+      pre {
+        margin: 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+      code {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Battle - 2024-11-04</h1>
+    <div class="container">
+      <div class="circle"></div>
+      <div class="shape l"></div>
+      <div class="shape r"></div>
+    </div>
+    <h2>Code</h2>
+    <div class="code-display">
+      <pre><code>
+    &lt;style&gt;
+      body {
+        background: #61A74E;
+        margin: 0;
+      }
+      .circle, .shape {
+        background: #FADE8B;
+        position: absolute;
+        border-radius: 1in;
+      }
+      .circle {
+        height: 100px;
+        width: 140px;
+        top: 80px;
+        left: 130px;
+      }
+      .shape {
+        height: 59px;
+        width: 60px;
+        border-radius: 0 0 36px 2in;
+      }
+      .l {
+        top: 160px;
+        left: 140px;
+      }
+      .r {
+        top: 160px;
+        right: 140px;
+        transform: scaleX(-1);
+      }
+    &lt;/style&gt;
+
+    &lt;div class='circle'&gt;&lt;/div&gt;
+    &lt;div class='shape l'&gt;&lt;/div&gt;
+    &lt;div class='shape r'&gt;&lt;/div&gt;
+      </code></pre>
+    </div>
+  </body>
+</html>
