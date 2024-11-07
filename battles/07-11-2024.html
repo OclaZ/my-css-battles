@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Battle - 2024-11-07</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+      h1,
+      h2 {
+        margin: 20px 0;
+      }
+      .container {
+        background: #6592cf;
+        height: 300px;
+        width: 400px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 10px solid #000;
+      }
+      .square,
+      .circle {
+        background: #243d83;
+        position: absolute;
+      }
+      .square {
+        height: 130px;
+        width: 130px;
+        top: 85px;
+      }
+      .square:nth-child(1) {
+        left: 0;
+      }
+      .square:nth-child(2) {
+        right: 0;
+      }
+
+      .circle {
+        height: 70px;
+        width: 140px;
+        border-radius: 70px 70px 0 0;
+      }
+      .circle:nth-child(3) {
+        top: 15px;
+        left: 130px;
+      }
+      .circle:nth-child(4) {
+        top: 145px;
+        left: 130px;
+      }
+      .code-display {
+        width: 90%;
+        max-width: 800px;
+        margin: 20px 0;
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        padding: 20px;
+        overflow-x: auto;
+      }
+      pre {
+        margin: 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+      code {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Battle - 2024-11-07</h1>
+    <div class="container">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+    <h2>Code</h2>
+    <div class="code-display">
+      <pre><code>
+    &lt;style&gt;
+      body {
+        background: #6592CF;
+        margin: 0;
+      }
+      .square, .circle {
+        background: #243D83;
+        position: absolute;
+      }
+      .square {
+        height: 130px;
+        width: 130px;
+        top: 85px;
+      }
+      .square:nth-child(1) { left: 0; }
+      .square:nth-child(2) { right: 0; }
+
+      .circle {
+        height: 70px;
+        width: 140px;
+        border-radius: 70px 70px 0 0;
+      }
+      .circle:nth-child(3) { top: 15px; left: 130px; }
+      .circle:nth-child(4) { top: 145px; left: 130px; }
+    &lt;/style&gt;
+
+    &lt;div class="square"&gt;&lt;/div&gt;
+    &lt;div class="square"&gt;&lt;/div&gt;
+    &lt;div class="circle"&gt;&lt;/div&gt;
+    &lt;div class="circle"&gt;&lt;/div&gt;
+      </code></pre>
+    </div>
+  </body>
+</html>
