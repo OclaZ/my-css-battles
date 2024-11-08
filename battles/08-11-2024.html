@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Battle - 2024-11-08</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+      h1,
+      h2 {
+        margin: 20px 0;
+      }
+      .container {
+        background: #fade8b;
+        height: 300px;
+        width: 400px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 10px solid #000;
+      }
+      .circle,
+      .half-circle {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background: #fade8b;
+        border: 45px solid #61a74e;
+      }
+      .circle {
+        border-radius: 50%;
+      }
+      .half-circle {
+        height: 15px;
+        border-radius: 110px 110px 0 0;
+        border-bottom: 0;
+        transform: rotate(90deg);
+      }
+      .rec {
+        width: 60px;
+        height: 30px;
+        background: #61a74e;
+        position: absolute;
+        top: 60px;
+        left: 80px;
+      }
+      .code-display {
+        width: 90%;
+        max-width: 800px;
+        margin: 20px 0;
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        padding: 20px;
+        overflow-x: auto;
+      }
+      pre {
+        margin: 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+      code {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Battle - 2024-11-08</h1>
+    <div class="container">
+      <div class="rec"></div>
+      <div class="circle" style="top: 90px; left: 140px"></div>
+      <div class="circle" style="top: 90px; right: 20px"></div>
+      <div class="half-circle" style="top: 120px; left: 50px"></div>
+    </div>
+    <h2>Code</h2>
+    <div class="code-display">
+      <pre><code>
+    &lt;style&gt;
+    body { background:#FADE8B; margin:0; }
+  .circle, .half-circle { width:30px; height:30px; position:absolute; background:#FADE8B; border:45px solid #61A74E; }
+  .circle { border-radius:50%; }
+  .half-circle { height:15px; border-radius:110px 110px 0 0; border-bottom:0; transform:rotate(90deg); }
+  .rec { width:60px; height:30px; background:#61A74E; position:absolute; top:60px; left:80px; }
+    &lt;/style&gt;
+
+    &lt;div class="circle" style="top:90px; left:140px;"&gt;&lt;/div&gt;
+    &lt;div class="circle" style="top:90px; right:20px;"&gt;&lt;/div&gt;
+    &lt;div class="half-circle" style="top:120px; left:50px;"&gt;&lt;/div&gt;
+    &lt;div class="rec"&gt;&lt;/div&gt;
+      </code></pre>
+    </div>
+  </body>
+</html>
