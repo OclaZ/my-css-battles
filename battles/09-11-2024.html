@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Battle - 2024-11-09</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+      h1,
+      h2 {
+        margin: 20px 0;
+      }
+      .container {
+        background: #aa445f;
+        height: 300px;
+        width: 400px;
+        position: relative;
+        border: 10px solid #000;
+      }
+      .box {
+        width: 220px;
+        height: 170px;
+        background: #62306d;
+        position: absolute;
+      }
+      .yellow {
+        width: 160px;
+        height: 140px;
+        background: #e38f66;
+        position: absolute;
+        top: 80px;
+        left: 120px;
+      }
+      .code-display {
+        width: 90%;
+        max-width: 800px;
+        margin: 20px 0;
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        padding: 20px;
+        overflow-x: auto;
+      }
+      pre {
+        margin: 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+      code {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Battle - 2024-11-09</h1>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box" style="bottom: 0; right: 0"></div>
+      <div class="yellow"></div>
+    </div>
+    <h2>Code</h2>
+    <div class="code-display">
+      <pre><code>
+    &lt;style&gt;
+      body {
+        background: #AA445F;
+        margin: 0;
+      }
+      .box {
+        width: 220px;
+        height: 170px;
+        background: #62306D;
+        position: absolute;
+      }
+      .yellow {
+        width: 160px;
+        height: 140px;
+        background: #E38F66;
+        position: absolute;
+        top: 80px;
+        left: 120px;
+      }
+    &lt;/style&gt;
+
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div class="box" style="bottom: 0; right: 0"&gt;&lt;/div&gt;
+    &lt;div class="yellow"&gt;&lt;/div&gt;
+      </code></pre>
+    </div>
+  </body>
+</html>
