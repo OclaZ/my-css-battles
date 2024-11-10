@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Battle - 2024-11-10</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+      h1,
+      h2 {
+        margin: 20px 0;
+      }
+      .container {
+        background: #924a4a;
+        height: 300px;
+        width: 400px;
+        position: relative;
+        border: 10px solid #000;
+      }
+      .circle {
+        width: 200px;
+        height: 200px;
+        background: #eeb850;
+        border-radius: 50%;
+        position: absolute;
+        top: 50px;
+        left: 100px;
+      }
+      .shape {
+        width: 55px;
+        height: 100px;
+        background: #eeb850;
+        border-radius: 50%;
+        position: absolute;
+      }
+      .shape1 {
+        top: 25px;
+        left: 172px;
+      }
+      .shape2 {
+        bottom: 25px;
+        left: 172px;
+      }
+      .shape3 {
+        top: 61px;
+        right: 109px;
+        transform: rotate(65deg);
+      }
+      .shape4 {
+        top: 61px;
+        left: 109px;
+        transform: rotate(-65deg);
+      }
+      .shape5 {
+        bottom: 67px;
+        right: 105px;
+        transform: rotate(130deg);
+      }
+      .shape6 {
+        bottom: 67px;
+        left: 105px;
+        transform: rotate(-130deg);
+      }
+      .code-display {
+        width: 90%;
+        max-width: 800px;
+        margin: 20px 0;
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        padding: 20px;
+        overflow-x: auto;
+      }
+      pre {
+        margin: 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+      code {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Battle - 2024-11-10</h1>
+    <div class="container">
+      <div class="circle"></div>
+      <div class="shape shape1"></div>
+      <div class="shape shape2"></div>
+      <div class="shape shape3"></div>
+      <div class="shape shape4"></div>
+      <div class="shape shape5"></div>
+      <div class="shape shape6"></div>
+    </div>
+    <h2>Code</h2>
+    <div class="code-display">
+      <pre><code>
+    &lt;style&gt;
+      body {
+        background: #924A4A;
+        margin: 0;
+      }
+      .circle {
+        width: 200px;
+        height: 200px;
+        background: #EEB850;
+        border-radius: 50%;
+        position: absolute;
+        top: 50px;
+        left: 100px;
+      }
+      .shape {
+        width: 55px;
+        height: 100px;
+        background: #EEB850;
+        border-radius: 50%;
+        position: absolute;
+      }
+      .shape1 { top: 25px; left: 172px; }
+      .shape2 { bottom: 25px; left: 172px; }
+      .shape3 { top: 61px; right: 109px; transform: rotate(65deg); }
+      .shape4 { top: 61px; left: 109px; transform: rotate(-65deg); }
+      .shape5 { bottom: 67px; right: 105px; transform: rotate(130deg); }
+      .shape6 { bottom: 67px; left: 105px; transform: rotate(-130deg); }
+    &lt;/style&gt;
+
+    &lt;div class="circle"&gt;&lt;/div&gt;
+    &lt;div class="shape shape1"&gt;&lt;/div&gt;
+    &lt;div class="shape shape2"&gt;&lt;/div&gt;
+    &lt;div class="shape shape3"&gt;&lt;/div&gt;
+    &lt;div class="shape shape4"&gt;&lt;/div&gt;
+    &lt;div class="shape shape5"&gt;&lt;/div&gt;
+    &lt;div class="shape shape6"&gt;&lt;/div&gt;
+      </code></pre>
+    </div>
+  </body>
+</html>
