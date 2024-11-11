@@ -10,7 +10,7 @@ const fetchBattles = async () => {
   try {
     const response = await fetch("/battles-list");
     battles = await response.json();
-    battles.sort((a, b) => new Date(a.date) - new Date(b.date)); // Sort by date
+    battles.sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort by date
     renderBattles();
   } catch (error) {
     console.error("Error fetching battle list:", error);
