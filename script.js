@@ -10,7 +10,26 @@ const fetchBattles = async () => {
   try {
     const response = await fetch("/battles-list");
     battles = await response.json();
-    battles.sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort by date
+
+    // Sort by year, month, and day
+    battles.sort((a, b) => {
+      const dateA = new Date(a.date);
+      const dateB = new Date(b.date);
+
+      // Compare by year
+      if (dateA.getFullYear() !== dateB.getFullYear()) {
+        return dateA.getFullYear() - dateB.getFullYear();
+      }
+
+      // Compare by month
+      if (dateA.getMonth() !== dateB.getMonth()) {
+        return dateA.getMonth() - dateB.getMonth();
+      }
+
+      // Compare by day
+      return dateA.getDate() - dateB.getDate();
+    });
+
     renderBattles();
   } catch (error) {
     console.error("Error fetching battle list:", error);
