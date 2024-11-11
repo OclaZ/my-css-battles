@@ -11,23 +11,23 @@ const fetchBattles = async () => {
     const response = await fetch("/battles-list");
     battles = await response.json();
 
-    // Sort by year, month, and day
+    // Sort by year, month, and day in descending order (most recent first)
     battles.sort((a, b) => {
       const dateA = new Date(a.date);
       const dateB = new Date(b.date);
 
-      // Compare by year
-      if (dateA.getFullYear() !== dateB.getFullYear()) {
-        return dateA.getFullYear() - dateB.getFullYear();
+      // Compare by year (descending)
+      if (dateB.getFullYear() !== dateA.getFullYear()) {
+        return dateB.getFullYear() - dateA.getFullYear();
       }
 
-      // Compare by month
-      if (dateA.getMonth() !== dateB.getMonth()) {
-        return dateA.getMonth() - dateB.getMonth();
+      // Compare by month (descending)
+      if (dateB.getMonth() !== dateA.getMonth()) {
+        return dateB.getMonth() - dateA.getMonth();
       }
 
-      // Compare by day
-      return dateA.getDate() - dateB.getDate();
+      // Compare by day (descending)
+      return dateB.getDate() - dateA.getDate();
     });
 
     renderBattles();
