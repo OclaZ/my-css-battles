@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Battle - 2024-11-12</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+      h1,
+      h2 {
+        margin: 20px 0;
+      }
+      .container {
+        height: 300px;
+        width: 400px;
+        background: #e05947;
+        position: relative;
+        border: 10px solid #000;
+      }
+      .rec1,
+      .rec3 {
+        width: 360px;
+        background: #f0f0f0;
+        position: absolute;
+        left: 20px;
+      }
+      .rec1 {
+        height: 85px;
+      }
+      .rec2 {
+        width: 130px;
+        height: 170px;
+        background: #e05947;
+        position: absolute;
+        left: 135px;
+        top: 65px;
+      }
+      .rec3 {
+        height: 20px;
+        top: 140px;
+      }
+      .code-display {
+        width: 90%;
+        max-width: 800px;
+        margin: 20px 0;
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        padding: 20px;
+        overflow-x: auto;
+      }
+      pre {
+        margin: 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+      code {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Battle - 2024-11-12</h1>
+    <div class="container">
+      <div class="rec1"></div>
+      <div class="rec1" style="bottom: 0"></div>
+      <div class="rec2"></div>
+      <div class="rec3"></div>
+    </div>
+    <h2>Code</h2>
+    <div class="code-display">
+      <pre><code>
+    &lt;style&gt;
+      body {
+        background: #E05947;
+        margin: 0;
+      }
+      .rec1, .rec3 {
+        width: 360px;
+        background: #F0F0F0;
+        position: absolute;
+        left: 20px;
+      }
+      .rec1 {
+        height: 85px;
+      }
+      .rec2 {
+        width: 130px;
+        height: 170px;
+        background: #E05947;
+        position: absolute;
+        left: 135px;
+        top: 65px;
+      }
+      .rec3 {
+        height: 20px;
+        top: 140px;
+      }
+    &lt;/style&gt;
+
+    &lt;div class='rec1'&gt;&lt;/div&gt;
+    &lt;div class='rec1' style='bottom:0;'&gt;&lt;/div&gt;
+    &lt;div class='rec2'&gt;&lt;/div&gt;
+    &lt;div class='rec3'&gt;&lt;/div&gt;
+      </code></pre>
+    </div>
+  </body>
+</html>
