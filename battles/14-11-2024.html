@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Battle - 2024-11-14</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+      h1,
+      h2 {
+        margin: 20px 0;
+      }
+      .container {
+        height: 300px;
+        width: 400px;
+        background: #fade8b;
+        position: relative;
+        border: 10px solid #000;
+      }
+      .shape {
+        width: 180px;
+        height: 180px;
+        background: #243d83;
+        position: absolute;
+        top: 60px;
+        left: 90px;
+        box-shadow: 40px 0 0#61a74e;
+        border-radius: 50%;
+        clip-path: inset(16.5% -22% 16.5% 0);
+      }
+      .code-display {
+        width: 90%;
+        max-width: 800px;
+        margin: 20px 0;
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        padding: 20px;
+        overflow-x: auto;
+      }
+      pre {
+        margin: 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+      code {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Battle - 2024-11-14</h1>
+    <div class="container">
+      <div class="shape"></div>
+    </div>
+    <h2>Code</h2>
+    <div class="code-display">
+      <pre><code>
+    &lt;style&gt;
+      body {
+        background: #FADE8B;
+        margin: 0;
+      }
+      .shape {
+        width: 180px;
+        height: 180px;
+        background: #243D83;
+        position: absolute;
+        top: 60px;
+        left: 90px;
+        box-shadow: 10vw 0 0 #61A74E;
+        border-radius: 50%;
+        clip-path: inset(16.5% -22% 16.5% 0);
+      }
+    &lt;/style&gt;
+
+    &lt;div class='shape'&gt;&lt;/div&gt;
+      </code></pre>
+    </div>
+  </body>
+</html>
