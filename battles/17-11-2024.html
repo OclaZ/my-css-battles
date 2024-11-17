@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Battle - 2024-11-17</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+      h1,
+      h2 {
+        margin: 20px 0;
+      }
+      .container {
+        height: 300px;
+        width: 400px;
+        background: #d96c7b;
+        position: relative;
+        border: 10px solid #000;
+      }
+      .square,
+      .circle {
+        position: absolute;
+        border: solid #ffffff;
+      }
+      .square {
+        width: 30px;
+        height: 30px;
+        border-width: 30px;
+        top: 105px;
+        left: 155px;
+      }
+      .circle {
+        width: 40px;
+        height: 40px;
+        border-width: 30px;
+        border-radius: 50% 50% 0 50%;
+      }
+      .t {
+        top: 35px;
+        left: 85px;
+      }
+      .b {
+        bottom: 35px;
+        right: 85px;
+        transform: rotate(180deg);
+      }
+      .code-display {
+        width: 90%;
+        max-width: 800px;
+        margin: 20px 0;
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        padding: 20px;
+        overflow-x: auto;
+      }
+      pre {
+        margin: 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+      code {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Battle - 2024-11-17</h1>
+    <div class="container">
+      <div class="square"></div>
+      <div class="circle t"></div>
+      <div class="circle b"></div>
+    </div>
+    <h2>Code</h2>
+    <div class="code-display">
+      <pre><code>
+    &lt;style&gt;
+     body {
+        background: #D96C7B;
+        margin: 0;
+      }
+      .square,
+      .circle {
+        position: absolute;
+        border: solid #ffffff;
+      }
+      .square {
+        width: 30px;
+        height: 30px;
+        border-width: 30px;
+        top: 105px;
+        left: 155px;
+      }
+      .circle {
+        width: 40px;
+        height: 40px;
+        border-width: 30px;
+        border-radius: 50% 50% 0 50%;
+      }
+      .t {
+        top: 35px;
+        left: 85px;
+      }
+      .b {
+        bottom: 35px;
+        right: 85px;
+        transform: rotate(180deg);
+      }
+    &lt;/style&gt;
+
+    &lt;div class='square'&gt;&lt;/div&gt;
+    &lt;div class='circle t'&gt;&lt;/div&gt;
+    &lt;div class='circle b'&gt;&lt;/div&gt;
+      </code></pre>
+    </div>
+  </body>
+</html>
