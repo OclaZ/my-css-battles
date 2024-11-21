@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>CSS Battle - 2024-11-20</title>
+    <title>CSS Battle - 2024-11-21</title>
     <style>
       body {
         margin: 0;
@@ -18,34 +18,32 @@
       .container {
         height: 300px;
         width: 400px;
-        background: #fade8b;
+        background: #63a3a0;
         position: relative;
         border: 10px solid #000;
       }
-      .rec,
-      .square {
-        width: 100px;
-        height: 100px;
-        background: #61a74e;
+      .shape {
+        background: #f3ead2;
         position: absolute;
       }
       .rec {
-        width: 200px;
-        top: 50px;
-        left: 100px;
+        width: 120px;
+        height: 20px;
+        top: 235px;
+        left: 140px;
       }
       .square {
-        bottom: 50px;
-        left: 100px;
+        width: 100px;
+        height: 100px;
+        top: 135px;
+        left: 150px;
       }
-      .triangle {
-        width: 0;
-        height: 0;
-        border-top: 100px solid #3f7331;
-        border-right: 100px solid transparent;
-        position: absolute;
-        bottom: 50px;
-        left: 200px;
+      .circle {
+        width: 120px;
+        height: 100px;
+        border-radius: var(--r, 50%);
+        top: 45px;
+        left: 140px;
       }
       .code-display {
         width: 90%;
@@ -69,51 +67,48 @@
     </style>
   </head>
   <body>
-    <h1>CSS Battle - 2024-11-20</h1>
+    <h1>CSS Battle - 2024-11-21</h1>
     <div class="container">
-      <
-      <div class="rec"></div>
-      <div class="square"></div>
-      <div class="triangle"></div>
+      <div class="shape rec"></div>
+      <div class="shape square"></div>
+      <div class="shape circle"></div>
     </div>
     <h2>Code</h2>
     <div class="code-display">
       <pre><code>
     &lt;style&gt;
      body {
-        background: #fade8b;
+        background: #63A3A0;
         margin: 0;
       }
-        .rec,
-      .square {
-        width: 100px;
-        height: 100px;
-        background: #61a74e;
+      .shape {
+        background: #f3ead2;
         position: absolute;
       }
       .rec {
-        width: 200px;
-        top: 50px;
-        left: 100px;
+        width: 120px;
+        height: 20px;
+        top: 235px;
+        left: 140px;
       }
       .square {
-        bottom: 50px;
-        left: 100px;
+        width: 100px;
+        height: 100px;
+        top: 135px;
+        left: 150px;
       }
-      .triangle {
-        width: 0;
-        height: 0;
-        border-top: 100px solid #3f7331;
-        border-right: 100px solid transparent;
-        position: absolute;
-        bottom: 50px;
-        left: 200px;
+      .circle {
+        width: 120px;
+        height: 100px;
+        border-radius: var(--r, 50%);
+        top: 45px;
+        left: 140px;
       }
     &lt;/style&gt;
 
-    &lt;div class='rec'&gt;&lt;/div&gt;
-    &lt;div class='square'&gt;&lt;/div&gt;
-    &lt;div class='triangle'&gt;&lt;/div&gt;
+    &lt;div class='shape rec'&gt;&lt;/div&gt;
+    &lt;div class='shape square'&gt;&lt;/div&gt;
+    &lt;div class='shape circle'&gt;&lt;/div&gt;
       </code></pre>
     </div>
   </body>
