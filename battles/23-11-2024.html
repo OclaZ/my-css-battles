@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Battle - 2024-11-22</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+      h1,
+      h2 {
+        margin: 20px 0;
+      }
+      .container {
+        height: 300px;
+        width: 400px;
+        background: #eeb850;
+        position: relative;
+        border: 10px solid #000;
+      }
+      .rec {
+        width: 220px;
+        height: 110px;
+        background: #243d83;
+        position: absolute;
+        top: 95px;
+        left: 90px;
+        border-radius: 21px;
+      }
+      .recs {
+        width: 70px;
+        height: 15px;
+        background: #eeb850;
+        position: absolute;
+        left: 165px;
+      }
+      .t {
+        top: 115px;
+      }
+      .b {
+        bottom: 115px;
+      }
+      .code-display {
+        width: 90%;
+        max-width: 800px;
+        margin: 20px 0;
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        padding: 20px;
+        overflow-x: auto;
+      }
+      pre {
+        margin: 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+      code {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Battle - 2024-11-22</h1>
+    <div class="container">
+      <div class="rec"></div>
+      <div class="recs t"></div>
+      <div class="recs b"></div>
+    </div>
+    <h2>Code</h2>
+    <div class="code-display">
+      <pre><code>
+    &lt;style&gt;
+     body {
+        background: #EEB850;
+        margin: 0;
+      }
+     .rec {
+        width: 220px;
+        height: 110px;
+        background: #243d83;
+        position: absolute;
+        top: 95px;
+        left: 90px;
+        border-radius: 21px;
+      }
+      .recs {
+        width: 70px;
+        height: 15px;
+        background: #eeb850;
+        position: absolute;
+        left: 165px;
+      }
+      .t {
+        top: 115px;
+      }
+      .b {
+        bottom: 115px;
+      }
+    &lt;/style&gt;
+
+    &lt;div class='rec'&gt;&lt;/div&gt;
+    &lt;div class='recs t'&gt;&lt;/div&gt;
+    &lt;div class='recs b'&gt;&lt;/div&gt;
+      </code></pre>
+    </div>
+  </body>
+</html>
