@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>CSS Battle - 2024-11-23</title>
+    <title>CSS Battle - 2024-11-24</title>
     <style>
       body {
         margin: 0;
@@ -18,31 +18,35 @@
       .container {
         height: 300px;
         width: 400px;
-        background: #eeb850;
+        background: #328fc1;
         position: relative;
         border: 10px solid #000;
       }
       .rec {
-        width: 220px;
-        height: 110px;
-        background: #243d83;
-        position: absolute;
-        top: 95px;
-        left: 90px;
-        border-radius: 21px;
-      }
-      .recs {
-        width: 70px;
-        height: 15px;
         background: #eeb850;
+        width: 100px;
+        height: 20px;
         position: absolute;
-        left: 165px;
       }
-      .t {
-        top: 115px;
+      .rec:nth-child(1) {
+        top: 118px;
+        left: 26px;
       }
-      .b {
-        bottom: 115px;
+      .rec:nth-child(2) {
+        top: 118px;
+        right: 26px;
+      }
+      .rec:nth-child(3) {
+        bottom: 118px;
+        left: 26px;
+      }
+      .rec:nth-child(4) {
+        bottom: 118px;
+        right: 26px;
+      }
+      .rec:nth-child(5) {
+        bottom: 140px;
+        right: 150px;
       }
       .code-display {
         width: 90%;
@@ -66,47 +70,56 @@
     </style>
   </head>
   <body>
-    <h1>CSS Battle - 2024-11-23</h1>
+    <h1>CSS Battle - 2024-11-24</h1>
     <div class="container">
       <div class="rec"></div>
-      <div class="recs t"></div>
-      <div class="recs b"></div>
+      <div class="rec"></div>
+      <div class="rec"></div>
+      <div class="rec"></div>
+      <div class="rec"></div>
     </div>
     <h2>Code</h2>
     <div class="code-display">
       <pre><code>
     &lt;style&gt;
      body {
-        background: #EEB850;
+        background: #328FC1;
         margin: 0;
       }
      .rec {
-        width: 220px;
-        height: 110px;
-        background: #243d83;
-        position: absolute;
-        top: 95px;
-        left: 90px;
-        border-radius: 21px;
-      }
-      .recs {
-        width: 70px;
-        height: 15px;
         background: #eeb850;
+        width: 100px;
+        height: 20px;
         position: absolute;
-        left: 165px;
       }
-      .t {
-        top: 115px;
+      .rec:nth-child(1) {
+        top: 118px;
+        left: 26px;
       }
-      .b {
-        bottom: 115px;
+      .rec:nth-child(2) {
+        top: 118px;
+        right: 26px;
+      }
+      .rec:nth-child(3) {
+        bottom: 118px;
+        left: 26px;
+      }
+      .rec:nth-child(4) {
+        bottom: 118px;
+        right: 26px;
+      }
+      .rec:nth-child(5) {
+        bottom: 140px;
+        right: 150px;
       }
     &lt;/style&gt;
 
     &lt;div class='rec'&gt;&lt;/div&gt;
-    &lt;div class='recs t'&gt;&lt;/div&gt;
-    &lt;div class='recs b'&gt;&lt;/div&gt;
+    &lt;div class='rec'&gt;&lt;/div&gt;
+    &lt;div class='rec'&gt;&lt;/div&gt;
+    &lt;div class='rec'&gt;&lt;/div&gt;
+    &lt;div class='rec'&gt;&lt;/div&gt;
+    
       </code></pre>
     </div>
   </body>
