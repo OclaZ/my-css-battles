@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Battle - 2024-11-28</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+      h1,
+      h2 {
+        margin: 20px 0;
+      }
+      .container {
+        height: 300px;
+        width: 400px;
+        background: #2f5a76;
+        position: relative;
+        border: 10px solid #000;
+      }
+      .shape {
+        width: 110px;
+        height: 110px;
+        position: absolute;
+      }
+      .yt,
+      .yb {
+        background: #f5bb60;
+      }
+      .pt,
+      .pb {
+        background: #f56760;
+      }
+      .yt {
+        border-bottom-left-radius: 110px;
+        top: 40px;
+        left: 90px;
+      }
+      .yb {
+        border-top-right-radius: 110px;
+        bottom: 40px;
+        right: 90px;
+      }
+      .pt {
+        border-top-left-radius: 110px;
+        top: 40px;
+        right: 90px;
+      }
+      .pb {
+        border-bottom-right-radius: 110px;
+        bottom: 40px;
+        left: 90px;
+      }
+      .code-display {
+        width: 90%;
+        max-width: 800px;
+        margin: 20px 0;
+        background-color: #f4f4f4;
+        border-radius: 5px;
+        padding: 20px;
+        overflow-x: auto;
+      }
+      pre {
+        margin: 0;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+      code {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Battle - 2024-11-28</h1>
+    <div class="container">
+      <div class="shape yt"></div>
+      <div class="shape yb"></div>
+      <div class="shape pt"></div>
+      <div class="shape pb"></div>
+    </div>
+    <h2>Code</h2>
+    <div class="code-display">
+      <pre><code>
+    &lt;style&gt;
+     body {
+        background: #2F5A76;
+        margin: 0;
+      }
+        .shape {
+        width: 110px;
+        height: 110px;
+        position: absolute;
+      }
+      .yt,
+      .yb {
+        background: #f5bb60;
+      }
+      .pt,
+      .pb {
+        background: #f56760;
+      }
+      .yt {
+        border-bottom-left-radius: 110px;
+        top: 40px;
+        left: 90px;
+      }
+      .yb {
+        border-top-right-radius: 110px;
+        bottom: 40px;
+        right: 90px;
+      }
+      .pt {
+        border-top-left-radius: 110px;
+        top: 40px;
+        right: 90px;
+      }
+      .pb {
+        border-bottom-right-radius: 110px;
+        bottom: 40px;
+        left: 90px;
+      }
+    &lt;/style&gt;
+    &lt;div class='shape yt'&gt;&lt;/div&gt;
+    &lt;div class='shape yb'&gt;&lt;/div&gt;
+    &lt;div class='shape pt'&gt;&lt;/div&gt;
+    &lt;div class='shape pb'&gt;&lt;/div&gt;
+      </code></pre>
+    </div>
+  </body>
+</html>
